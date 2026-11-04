@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    { "source": "/api/gemini/chat", "destination": "/api/chat" },
+    { "source": "/api/gemini/quiz", "destination": "/api/quiz" },
+    { "source": "/api/gemini/flashcards", "destination": "/api/flashcards" },
+    { "source": "/api/gemini/extract-outline", "destination": "/api/extract-outline" },
+    { "source": "/api/gemini/generate-topic-notes", "destination": "/api/generate-topic-notes" },
+    { "source": "/api/document/extract-text", "destination": "/api/extract-text" },
+    { "source": "/api/(.*)", "destination": "/api/$1" },
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}
